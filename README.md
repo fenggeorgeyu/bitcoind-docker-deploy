@@ -6,17 +6,17 @@ Your local `~/.bitcoin` is mounted as `/data/.bitcoin` in your container.
 # use GNU make to control containers
 
 1. pull image
-  - `make pull`
-  - this will pull the bitcoind container image from dockerhub
+    - `make pull`
+    - this will pull the bitcoind container image from dockerhub
 2. create container
-  - `make create`
-  - this will run a bitcoind server in docker
+     - `make create`
+     - this will run a bitcoind server in docker
 3. login the shell of the container
-  - `make shell`
+     - `make shell`
 4. stop the container
-  - `make stop`
-1. delete the containter
-  - `make delete`
+     - `make stop`
+5. delete the containter
+     - `make delete`
 
 # Examples (interact):
 
