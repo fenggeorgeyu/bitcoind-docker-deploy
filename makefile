@@ -17,17 +17,12 @@ pull:
 create:
 	docker run  -it  --rm  --detach \
 	-v ~/.bitcoin:/data/.bitcoin \
-    -p 8332:8332 \
-    -p 8333:8333 \
-    -p 28332:28332 \
-    -p 28333:28333 \
-    --name bitcoind \
+	-p 8332:8332 \
+	-p 8333:8333 \
+	-p 28332:28332 \
+	-p 28333:28333 \
+	--name bitcoind \
 	${image}:${version}
-
-# --restart=always 
-
-
-
 
 shell:
 	docker exec -it ${name} /bin/sh
