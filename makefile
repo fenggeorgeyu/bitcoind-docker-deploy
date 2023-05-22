@@ -1,18 +1,13 @@
 # docker image: https://hub.docker.com/r/lncm/bitcoind
 # check image tags: https://hub.docker.com/r/lncm/bitcoind/tags
-#version=v24.0.1-arm64v8 #for mac with apple chips
-version=v24.0.1 #for common machines
+tag=v24.0.1 #for common machines
 image=lncm/bitcoind
-
-git_dir=${HOME}/git
-
-
 name=bitcoind
 
 all:
 
 pull:
-	docker pull ${image}:${version}
+	docker pull ${image}:${tag}
 
 create:
 	docker run  -it  --rm  --detach \
@@ -22,7 +17,7 @@ create:
 	-p 28332:28332 \
 	-p 28333:28333 \
 	--name bitcoind \
-	${image}:${version}
+	${image}:${tag}
 
 shell:
 	docker exec -it ${name} /bin/sh
