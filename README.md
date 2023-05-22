@@ -8,12 +8,12 @@ Your local `~/.bitcoin` is mounted as `/data/.bitcoin` in your container.
 1. pull image
   - `make pull`
   - this will pull the bitcoind container image from dockerhub
-1. create container
+2. create container
   - `make create`
   - this will run a bitcoind server in docker
-1. login the shell of the container
+3. login the shell of the container
   - `make shell`
-1. stop the container
+4. stop the container
   - `make stop`
 1. delete the containter
   - `make delete`
