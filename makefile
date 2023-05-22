@@ -26,13 +26,7 @@ create:
 
 # --restart=always 
 
-# Examples (interact):
 
-# docker exec -it bitcoind bitcoind --help
-# docker exec -it bitcoind bitcoind --version
-# docker exec -it bitcoind bitcoin-cli --help
-# docker exec -it bitcoind bitcoin-cli -getinfo
-# docker exec -it bitcoind bitcoin-cli getblockcount
 
 
 shell:
