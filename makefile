@@ -10,7 +10,7 @@ pull:
 	docker pull ${image}:${tag}
 
 create:
-	docker run  -it  --rm  --detach \
+	docker run  -it  --detach \
 	-v ~/.bitcoin:/data/.bitcoin \
 	-p 8332:8332 \
 	-p 8333:8333 \
