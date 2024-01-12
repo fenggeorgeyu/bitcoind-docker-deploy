@@ -162,3 +162,9 @@ cython_debug/
 .vscode/
 shared/
 !shared/.empty
+
+_bitcoin*/*
+!_bitcoin/bitcoin.conf
+
+
+
