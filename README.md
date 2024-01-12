@@ -10,9 +10,9 @@ The folder `_bitcoin/` in this repo is linked as `~/.bitcoin/` on your local mac
 Check the `bitcoin.conf` file in the `_bitcoin/` folder.
 
 
-- `testnet=1` (the initial setting of this repo) will connect to the test net. The test net is designed as a safer testing environment for developers.
-- `regtest=1` connect to the "regtest" net
-- If no network parameter is given, or uncommenting the above two parameters, the bitcoin core client will by default connect to the main net.
+- `testnet=1` (the initial setting of this repo) will connect to the *test net*. The test net is designed as a safer testing environment for developers.
+- `regtest=1` connect to the *regtest* net
+- If no network parameter is given, or uncommenting the above two parameters, the bitcoin core client will by default connect to the *main net*.
 
 
 # use GNU make to control containers
