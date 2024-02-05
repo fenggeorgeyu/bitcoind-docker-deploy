@@ -1,11 +1,12 @@
 # bitcoind-docker-deploy
 deploy a bitcoind
 
-## data folder
+
+# data folder
 
 The folder `_bitcoin/` in this repo is linked as `~/.bitcoin/` on your local machine so that both docker and a standard alone bitcoin core client can share the same folder. The local `~/.bitcoin` is mounted as `/data/.bitcoin` in the container.
 
-## bitcoin network
+# bitcoin network
 
 Check the `bitcoin.conf` file in the `_bitcoin/` folder.
 
@@ -14,8 +15,14 @@ Check the `bitcoin.conf` file in the `_bitcoin/` folder.
 - `regtest=1` connect to the *regtest* net
 - If no network parameter is given, or uncommenting the above two parameters, the bitcoin core client will by default connect to the *main net*.
 
+# how to run
+## download the repo
 
-# use GNU make to control containers
+```shell
+git clone https://github.com/fenggeorgeyu/bitcoind-docker-deploy.git
+cd bitcoind-docker-deploy
+```
+## use GNU make to control containers
 
 1. pull image
     - `make pull`
