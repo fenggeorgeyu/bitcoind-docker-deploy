@@ -17,7 +17,7 @@ pull:
 ## for transactions and blocks: 28332 28333
 
 create:
-	[ -d ${ln_vol} ] || ln -s ${repo_dir}/_bitcoin ${ln_vol}
+	#[ -d ${ln_vol} ] || ln -s ${repo_dir}/_bitcoin ${ln_vol}
 	docker run  -it  --detach \
 	-v ~/.bitcoin:/data/.bitcoin \
 	-p 8332:8332 \
